@@ -1,1 +1,1 @@
-# Loader_Animations
+# Várias animações com CSS para loaders

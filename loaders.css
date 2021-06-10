@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+    height: 100vh;
+}
+
+.loader {
+    position: relative;
+} 

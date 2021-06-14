@@ -8,7 +8,8 @@
     align-items: center;
     justify-content: center;
     background-color: #111;
-    height: 100vh;
+    height: 50vh;
+    width: 100%;
 }
 
 .loader {
@@ -69,4 +70,83 @@
     right: 0;
     background-color: yellow;
     box-shadow: 0 0 20px rgb(255, 255, 0);
+}
+
+/**Animação Loader 2*/
+@keyframes loader2 {
+    0%, 40%, 100% { 
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(2)
+    }
+}
+
+.loader2 {
+    width: 200px;
+    height: 100px;
+}
+
+.loader2 span {
+    width: 20px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    border-radius: 20px;
+}
+
+.loader2 span:nth-child(1) {
+    left: 0;
+    background-color: violet;
+    box-shadow: 0 0 20px violet;
+    animation: loader2 2s ease infinite;
+}
+
+.loader2 span:nth-child(2) {
+    left: 25px;
+    background-color: indigo;
+    box-shadow: 0 0 20px indigo;
+    animation: loader2 2s ease infinite 0.15s;
+}
+
+.loader2 span:nth-child(3) {
+    left: 50px;
+    background-color: blue;
+    box-shadow: 0 0 20px blue;
+    animation: loader2 2s ease infinite 0.3s;
+}
+
+.loader2 span:nth-child(4) {
+    left: 75px;
+    background-color: green;
+    box-shadow: 0 0 20px green;
+    animation: loader2 2s ease infinite 0.45s;
+}
+
+.loader2 span:nth-child(5) {
+    left: 100px;
+    background-color: yellow;
+    box-shadow: 0 0 20px yellow;
+    animation: loader2 2s ease infinite 0.6s;
+}
+
+.loader2 span:nth-child(6) {
+    left: 125px;
+    background-color: orange;
+    box-shadow: 0 0 20px orange;
+    animation: loader2 2s ease infinite 0.75s;
+}
+
+.loader2 span:nth-child(7) {
+    left: 150px;
+    background-color: red;
+    box-shadow: 0 0 20px red;
+    animation: loader2 2s ease infinite 0.9s;
+}
+
+.loader2 span:nth-child(8) {
+    left: 175px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 20px whitesmoke;
+    animation: loader2 2s ease infinite 1.05s;
 }

@@ -4,11 +4,11 @@
 }
 
 .color1 {
-    background-color: rgb(2, 2, 2);
+    background-color: #081010;
 }
 
 .color2 {
-    background-color: #1f1f1f;
+    background-color: #080f15;
 }
 
 .parent {
@@ -218,3 +218,22 @@
 }
 
 /**Animação Loader 4*/
+@keyframes loader4 {
+    50% {
+        transform: rotate(360deg);
+        border-radius: 4px;
+        width: 0;
+        height: 0;
+        border-width: 105px;
+    }
+}
+
+.loader4 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid #ddd;
+    border-top-color: green;
+    border-left-color: green;
+    animation: loader4 2s ease infinite;
+}

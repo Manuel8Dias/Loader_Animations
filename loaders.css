@@ -11,9 +11,11 @@
 
 .parent {
     display: flex;
+    background-color: #081010;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 100vh;
+
 }
 
 .loader {

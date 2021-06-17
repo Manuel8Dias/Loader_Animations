@@ -3,12 +3,10 @@
     padding: 0;
 }
 
-.color1 {
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
     background-color: #081010;
-}
-
-.color2 {
-    background-color: #080f15;
 }
 
 .parent {
@@ -16,7 +14,6 @@
     align-items: center;
     justify-content: center;
     height: 50vh;
-    width: 100vw;
 }
 
 .loader {

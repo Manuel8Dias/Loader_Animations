@@ -444,19 +444,54 @@
 
 /**Animação Loader 9*/
 @keyframes loader9 {
-    
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader9bg {
+    0%  {
+        background-color: #fff;
+    }
+    25% {
+        background-color: red;
+    }
+    50% {
+        background-color: yellow;
+    }
+    75% {
+        background-color: green;
+    }
+    100% {
+        background-color: #000;
+    }
 }
 
 .loader9 {
-    
+    box-sizing: border-box; 
+    width: 200px;
+    height: 200px; 
+    border-radius: 50%;
+    background-color: #ddd;
+    border: 20px solid transparent;
+    border-top-color: #081010;
+    border-bottom-color: #081010;
+    box-shadow: 0 0 16px #0020d6, 0 0 40px #0000c0;
+    animation: loader9 1.8s linear infinite;
 }
 
 .loader9:before {
-
-}
-
-.loader9:after {
-    
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+    animation: loader9bg 6s linear infinite alternate;
 }
 
 /**Animação Loader 10*/

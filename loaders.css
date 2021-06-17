@@ -495,18 +495,34 @@
 }
 
 /**Animação Loader 10*/
-@keyframes loader {
-    
+@keyframes loader10 {
+    0% {
+        transform: rotateY(0deg);
+    }
+    33% {
+        transform: rotateY(180deg);
+    }
+    66% {
+        transform: rotate(120deg)
+    }
 }
 
 .loader10 {
-    
+    width: 0px;
+    height: 0px;
+    border-bottom: 200px solid green;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+    animation: loader10 2s linear infinite;
 }
 
 .loader10:before {
-
-}
-
-.loader10:after {
-    
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    left: calc(50% - 20px);
+    top: -20px;
+    background-color: blue;
 }

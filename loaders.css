@@ -1,19 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: #081010;
 }
 
-/* .container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: #081010;
-} */
-
 .parent {
+    float: left;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #081010;
+    width: 33.33%;
     height: 50vh;
 }
 
